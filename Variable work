@@ -6,8 +6,26 @@ namespace MyApplication
   {
     static void Main(string[] args)
     {
-       
-      
-    }
+      string firstName = "Ryan ";
+      string middleName = "Scott ";
+      string lastName = "Schultz";
+      string fullName = (firstName + middleName + lastName);
+      Console.WriteLine(fullName);
+      string ageMessage = "There is probobly a better way to do this but anyways. Ryan is this years old.";
+      int x = 10;
+      int y = 9;
+      Console.WriteLine(ageMessage);
+      Console.WriteLine(x + y);
+      string nextMessage = "this next number i can't change because it is a constant it is also a dumb year.";
+      Console.WriteLine(nextMessage);
+      const int myNum = 2020;
+      Console.WriteLine(myNum);
+      double myDoubleNum = 20.20D;
+      Console.WriteLine(myDoubleNum);
+      String nextMessage2 = "My double number was 20.20 but when it came out it show 20.2, interesting.";
+      Console.WriteLine(nextMessage2);
+      string messagePart1 = "This message is in half in a string.";
+      Console.WriteLine(messagePart1 + "and half writen in a console writeline command");
+     }
   }
 }
