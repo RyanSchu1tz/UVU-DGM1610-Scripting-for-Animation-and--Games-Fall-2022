@@ -16,13 +16,6 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomBalloon", startDelay, spawnInterval);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SpawnRandomBalloon()
     {
         // Get a random point on x-axis
@@ -33,5 +26,6 @@ public class SpawnManager : MonoBehaviour
 
         // Spawn a random balloon
         Instantiate(balloonPrefabs[balloonIndex], spawnPosX, balloonPrefabs[balloonIndex].transform.rotation);
+        
     }
 }
