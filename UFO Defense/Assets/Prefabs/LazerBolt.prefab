@@ -202,6 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4555421182285580378}
   - component: {fileID: 4555421182285580379}
+  - component: {fileID: -3692895643424600339}
   m_Layer: 0
   m_Name: LazerBolt
   m_TagString: Untagged
@@ -239,3 +240,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &-3692895643424600339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555421182285580356}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deefc66835dc78469f07c04a28c034b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hInput: 0
+  speed: 0
+  xRange: 21.5
+  lazerBolt: {fileID: 0}
+  blaster: {fileID: 0}

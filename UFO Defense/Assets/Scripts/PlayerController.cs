@@ -7,7 +7,10 @@ public class PlayerController : MonoBehaviour
     public float hInput;
     public float speed;
 
-    public float xRange = 11.0f;
+    public float xRange = 21.5f;
+
+    public GameObject lazerBolt; //game obeject projectile to shoot
+    public Transform blaster;  //Point of origin for the lazerBolt
 
 
     // Start is called before the first frame update
@@ -35,6 +38,11 @@ public class PlayerController : MonoBehaviour
         if(transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);  //instatntiate lazerbolt gameobject at blaster position
         }
     }
 }
