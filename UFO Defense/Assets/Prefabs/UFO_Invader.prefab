@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4845641356788178319}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.144, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.025, y: 0, z: 0}
   m_LocalScale: {x: 0.46898052, y: 2.060261, z: 0.35520053}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4845641358674089769}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &4845641356788178306
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,6 +97,8 @@ GameObject:
   - component: {fileID: 4845641358674089770}
   - component: {fileID: 4845641358674089749}
   - component: {fileID: 4845641358674089774}
+  - component: {fileID: -4279504923696424575}
+  - component: {fileID: 8483993004835889202}
   m_Layer: 0
   m_Name: UFO_Invader
   m_TagString: Untagged
@@ -111,7 +113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4845641358674089748}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 5.72, y: 0, z: 23.65}
   m_LocalScale: {x: 4.017531, y: 0.54503787, z: 2.5104747}
   m_ConstrainProportionsScale: 0
@@ -119,7 +121,7 @@ Transform:
   - {fileID: 4845641356788178316}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &4845641358674089768
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -181,8 +183,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.44084755
+  m_Center: {x: 0, y: -2.5150018, z: 0}
 --- !u!114 &4845641358674089749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +214,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4279504923696424575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845641358674089748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08cff3505004bc4409e93e5668a48544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 50
+  lowerBounds: -15
+--- !u!114 &8483993004835889202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845641358674089748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06dbd31f547b29c43976d3fba6041899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 100
