@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AlienBlaster : MonoBehaviour
 {
-    public GameObject LaserBolt;
+    public GameObject laserBolt;
     public Transform alienBlaster;
 
-    public float startDelay = 3;
-    public float spawnInterval = 1.5;
+    public float startDelay = 3f;
+    public float spawnInterval = 1.5f;
 
 
 
@@ -26,6 +26,6 @@ public class AlienBlaster : MonoBehaviour
 
     void AlienShoot()
     {
-        Instantiate(LasterBolt, alienBlaster, LaserBolt.transform.rotation);
+        Instantiate(laserBolt, alienBlaster.transform.position, laserBolt.transform.rotation);
     }
 }
